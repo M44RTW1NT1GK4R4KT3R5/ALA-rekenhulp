@@ -8,18 +8,35 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-    <script>
-        var getal = prompt("waarde hier");
-        var antw = facturial(getal);
-        alert("antwoord: "+antw);
+        <nav class="nav navbar-default">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Thuis</a></li>
+                    <li><a href="css/bootstrap-theme.css">Boot trap</a> </li>
+                </ul>
+            </div>
+        </nav>
+        <!--<script>
+            var getal = prompt("waarde hier");
+            var antw = facturial(getal);
+            document.write("antwoord: "+antw);
 
-        function facturial(waarde){
-            if (waarde == 0){
-                return (1);
-            }else{
-                return (waarde * facturial(waarde-1));
+            function facturial(waarde){
+                if (waarde == 0){
+                    return (1);
+                }else{
+                    return (waarde * facturial(waarde-1));
+                }
             }
-        }
-    </script>
+        </script>-->
+
+        <h1 style="text-align: center"> hallo </h1>
+
+        <div class="row">
+                <div class="col-sm-4" style="background-color: red; text-align: center;">.col-sm-4</div>
+                <div class="col-sm-4" style="background-color:green; text-align: center;">.col-sm-4</div>
+                <div class="col-sm-4" style="background-color: blue; text-align: center;">.col-sm-4</div>
+
+        </div>
     </body>
 </html>
