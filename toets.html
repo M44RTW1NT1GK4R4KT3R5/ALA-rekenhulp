@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="js/reken.js"></script>
+        <title>Toets</title>
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body onload="toetsmaker(document.getElementById('keuze').value)"  id="pagina">
+        <nav class="nav navbar-default" style="background-color: lightskyblue;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">TafelsOefenen.nl</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Thuis</a></li>
+                    <li class="active"><a href="toets.html" id="pagina">Toets</a> </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="toetsvel">
+            <div id="kop"><label>tafel van: </label><select name="tafels" id="keuze" onchange="toetsmaker(value)">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select></div><br>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label id="s1">.........</label></td>
+                        <td><input type="text" name="som1" id="a1"></td>
+                    </tr>
+                    <tr>
+                        <td><label id="s2">.........</label></td>
+                        <td><input type="text" name="som2" id="a2"></td>
+                    </tr>
+                    <tr>
+                        <td><label id="s3">.........</label></td>
+                        <td><input type="text" name="som3" id="a3"></td>
+                    </tr>
+                    <tr>
+                        <td><label id="s4">.........</label></td>
+                        <td><input type="text" name="som4" id="a4"></td>
+                    </tr>
+                    <tr>
+                        <td><label id="s5">.........</label></td>
+                        <td><input type="text" name="som5" id="a5"></td>
+                    </tr>
+                    <tr>
+                        <td><label id="s6">.........</label></td>
+                        <td><input type="text" name="som6" id="a6"></td>
+                    </tr>
+                    <tr>
+                        <td><label id="s7">.........</label></td>
+                        <td><input type="text" name="som7" id="a7"></td>
+                    </tr>
+                    <tr>
+                        <td><label id="s8">.........</label></td>
+                        <td><input type="text" name="som8" id="a8"></td>
+                    </tr>
+                    <tr>
+                        <td><label id="s9">.........</label></td>
+                        <td><input type="text" name="som9" id="a9"></td>
+                    </tr>
+                    <tr>
+                        <td><label id="s10">.........</label></td>
+                        <td><input type="text" name="som10" id="a10"></td>
+                    </tr>
+                    <tr>
+                        <td><label id="s11">.........</label></td>
+                        <td><input type="text" name="som11" id="a11"></td>
+                    </tr>
+                    <tr>
+                        <td><label id="s12">.........</label></td>
+                        <td><input type="text" name="som12" id="a12"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="button" id="nakijk" value="nakijken" onclick="nakijken(document.getElementById('keuze').value)"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><p id="resultaat"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+        </div>
+        <div>
+            <footer>
+
+            </footer>
+        </div>
+    </body>
+</html>
