@@ -32,5 +32,11 @@ function nakijken(niveau){
         }
     }
     var cijfer = Math.round((goed/12*9+1)*10)/10;
-    document.getElementById("resultaat").innerHTML = goed+" goed, "+fout+" fout, Cijfer: "+cijfer;
+    if (fout >4) {
+        document.getElementById("resultaat").innerHTML = goed + " goed, " + fout + " fout, Cijfer: " + cijfer + " Gebruik de oefensommen om te trainen."
+        document.getElementById("knopplek").innerHTML = "<a href='Oefensommen.pdf'>Oefensommen</a>";
+    }else{
+        document.getElementById("resultaat").innerHTML = goed+" goed, "+fout+" fout, Cijfer: "+cijfer;
+    }
+
 }

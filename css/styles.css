@@ -44,3 +44,9 @@ table{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+tr td a{
+    text-decoration: none;
+    background: #eee;
+    color: #000;
+    border: 1px solid #000;
+}
